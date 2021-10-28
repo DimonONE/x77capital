@@ -98,7 +98,7 @@ const TableElement = () => {
           <h4>Тип биржи</h4>
           <p>Название</p>
         </TableCell>
-        <TableCell align="center">
+        <TableCell align="center" className='table__cell-auth'>
           <h4>Авторизация</h4>
           <p className='table-auth'>успех авторизации</p>
         </TableCell>

@@ -32,6 +32,9 @@
       }
       .table-auth {
         color: #27AE60;
+        width: 100px;
+        margin: 0 auto;
+        margin-bottom: 20px;
       }
     }
     th {
@@ -41,7 +44,8 @@
     &-options {
       display: flex !important;
       align-items: center;
-      width: 100%;
+      justify-content: center;
+      // width: 200px;
       p {
         font-size: 25px !important;
         color: #EB5757;
