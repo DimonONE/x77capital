@@ -21,7 +21,7 @@ const Header = () => {
 
     return (
         <div className="header">
-            <Link to="/pages/OTC-Single" className="logo-container">
+            <Link to={`${!loginFollow ? "/login" : "/pages/OTC-Single"}`} className="logo-container">
                 <img src={logo} alt="logo"/>
             </Link>
             {loginFollow ? (

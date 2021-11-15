@@ -17,14 +17,22 @@ import History from "./pages/History";
 import { useEffect } from "react";
 import { useGlobalState } from "./globalState";
 import OtcCash from "./pages/OtcCash";
+import { useHistory } from "react-router-dom";
 
 const App = () => {
   const [loginFollow, setLogin] = useGlobalState("login");
+  const history = useHistory()
+
   useEffect(() => {
     // if (localStorage.token) {
     //   setLogin(true);
     // }
   }, []);
+
+  if(!loginFollow){
+    history.push('/login')
+  }
+
 
   return (
     <div className="App ">
